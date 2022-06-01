@@ -1,10 +1,35 @@
-let email = 'naeyar@gmail.com'
+let radius = 10
+const pi = 3.14
 
-//let result = email.lastIndexOf('a')
-//slice(start_index,end_index)
-//let result = email.slice(0, 10)
-//substr(start_index,no_of_characters)
-//let result = email.substr(4, 10)
-//only replace the first character
-let result = email.replace('m', 'w')
+//console.log(radius, pi)
+
+//math operators +,-,*,/,**,%
+
+console.log(10 / 2)
+//let result = radius % 3
+//let result = pi * radius ** 3
+
+//order of operation - B I M A S
+
+//let result = 5 * (10 - 3) ** 2
+
+//console.log(result)
+
+let likes = 10
+// likes = likes + 1
+// likes++
+// likes--
+
+// likes += 10
+// likes -= 5
+// likes *= 2
+// likes /= 2
+
+// console.log(likes)
+
+//NaN - not a number
+
+//console.log('hello' / 10)
+
+let result = 'the blog has ' + likes + 'likes'
 console.log(result)
