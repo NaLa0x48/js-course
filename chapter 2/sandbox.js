@@ -1,32 +1,10 @@
-//string
-console.log('hello , world')
-
 let email = 'naeyar@gmail.com'
 
-console.log(email)
-
-//string concatenation
-
-let firstname = 'Nay'
-let lastname = 'Lin'
-
-let fullname = firstname + ' ' + lastname
-
-console.log(fullname)
-
-//getting characters
-
-console.log(fullname[0])
-
-//string length
-
-console.log(fullname.length)
-
-//string methods
-console.log(fullname.toUpperCase())
-
-let result = fullname.toLowerCase()
-console.log(result, fullname)
-
-let index = email.indexOf('@')
-console.log(index)
+//let result = email.lastIndexOf('a')
+//slice(start_index,end_index)
+//let result = email.slice(0, 10)
+//substr(start_index,no_of_characters)
+//let result = email.substr(4, 10)
+//only replace the first character
+let result = email.replace('m', 'w')
+console.log(result)
