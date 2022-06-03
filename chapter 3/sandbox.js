@@ -1,47 +1,34 @@
-// //template strings
+// let age
+// console.log(age, age + 3, `the age is ${age}`)
 
-// const title = 'Best reads of 2022'
-// const author = 'Mario'
-// const likes = 30
+// let age = null
+// console.log(age, age + 3, `the age is ${age}`)
 
-// // const result =
-// //   'The blog is called ' + title + ' by ' + author + ' has ' + likes + ' likes.'
-// // console.log(result)
+//boolean and comperison
 
-// //template string way
+console.log(true, false, 'true', 'false')
 
-// let result = `The blog called ${title} by ${author} has ${likes} likes.`
+//methods can return booleans
+let email = 'naeyar@gmail.com'
+//let name = ['mario', 'nae', 'toad']
+
+//let result = email.includes('@')
+// let result = name.includes('nae')
 // console.log(result)
 
-// //creating html templates
+let age = 25
+// console.log(age == 25)
+// console.log(age != 30)
+// console.log(age > 20)
+// console.log(age < 20)
+// console.log(age >= 25)
+// console.log(age <= 25)
 
-// let html = `
-//     <h2>${title}</h2>
-//     <p>By ${author}</p>
-//     <span>This blog has ${likes} likes</span>
-// `
+let name = 'shuan'
 
-// console.log(html)
-
-//arrays
-
-let ninja = ['shaun', 'ryu', 'chan-li']
-// ninja[1] = 'ken'
-// console.log(ninja[1])
-
-// let ages = [20, 25, 30, 35]
-// console.log(ages)
-
-let random = ['shuan', 'ryu', 20, 25, 30]
-console.log(random.length)
-
-//array methods
-
-// let result = ninja.join(',')
-//let result = ninja.indexOf('chan-li')
-
-//let result = ninja.concat(['ken', 'lee'])
-let result = ninja.push('ken')
-result = ninja.pop()
-
-console.log(result)
+console.log(name == 'shuan')
+console.log(name == 'Shuan')
+//first letter matters
+console.log(name > 'crystal')
+//uppercase is always smaller than lower case
+console.log(name > 'Shuan')
