@@ -6,7 +6,7 @@
 
 // console.log(3)
 // console.log(4)
-const getPosts = (callback) => {
+const getPosts = (resource, callback) => {
   const request = new XMLHttpRequest()
   request.addEventListener('readystatechange', () => {
     //console.log(request, request.responseText)
@@ -17,18 +17,19 @@ const getPosts = (callback) => {
       callback('could not fetch data', undefined)
     }
   })
-  request.open('GET', 'todos.json')
+  request.open('GET', resource)
   request.send()
 }
 console.log(1)
 console.log(2)
-getPosts((err, data) => {
-  console.log('callback fires')
-  if (err) {
-    console.log(err)
-  } else {
+getPosts('todos/luigi.json', (err, data) => {
+  console.log(data)
+  getPosts('todos/mario.json', (err, data) => {
     console.log(data)
-  }
+    getPosts('todos/shuan.json', (err, data) => {
+      console.log(data)
+    })
+  })
 })
 
 console.log(3)
